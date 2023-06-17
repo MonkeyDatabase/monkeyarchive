@@ -1,0 +1,48 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: Monkey's Blog
+email:
+description: 猴子的个人博客.
+url: https://monkeydatabase.github.io
+keywords: ["blog", "cyber","security"]
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Asia/Shanghai
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->    
+permalink:         /articles/:year-:month/:title
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+  input: GFM
+
+plugins:
+  - jekyll-paginate
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: Diamon
+  avatar: home-logo.png
+  job: "It's just a blog"
+  bio: "To record my process of study"
+  email:
